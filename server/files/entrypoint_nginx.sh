@@ -207,4 +207,4 @@ if [[ "$WARNING53" == true ]]; then
 fi
 
 # Start NGINX
-nginx -g 'daemon off;'
+nginx -g 'daemon off; error_log stderr info; access_log stderr combined;'
